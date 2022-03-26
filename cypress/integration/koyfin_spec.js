@@ -5,7 +5,6 @@ describe('On logging into Koyfin', () => {
     cy.contains('Log In').click();
     cy.get('input[name="email"]').type('sukant.ghosh@gmail.com');
     cy.get('input[name="password"]').type('test123').type("{enter}");
-    cy.contains('Graphs').click();
     cy.contains('Historical Graph').click();
     cy.contains('Graphs').click();
 })
